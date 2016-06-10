@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["Ross Geesman"]
   spec.email         = ["rossgeesman@gmail.com"]
-  spec.description   = "afk away messages"
+  spec.description   = "afk away message handler for lita.io"
   spec.summary       = "lita-way saves 'away from keyboard' status messages and informs users via DM if they @mention a user who is currently afk."
   spec.homepage      = "http://blog.prettymuchallofthetime.com/"
   spec.license       = "MIT"
