@@ -31,8 +31,8 @@ module Lita
       def inform_status(response)
         name = response.matches.flatten.pop
         user = Lita::User.fuzzy_find(name) || Lita::User.fuzzy_find(name.chop)
-        if user && redis.get(response.user.id)
-          message = redis.get(response.user.id) 
+        if user && redis.get(user.id)
+          message = redis.get(user.id) 
           response.reply_privately("#{user.name} is afk. Away Message: '#{message}'.")
         else
           true
